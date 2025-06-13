@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine:bold,bolditalic|Inconsolata:italic|Droid+Sans');
+
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'poopons',sans-serif;
+}
+ header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 95%;
+    padding: 20px 40px;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+.logo{
+    font-size: 200;
+    color: #fff;
+    user-select: none;
+}
+.navigition a{
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigition a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ff0076;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigition a:hover::after{
+    transform: scaleX(1);
+transform-origin: left;
+}
+.navigition .btn-hade{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition:  .5s;
+}
+.navigition .btn-hade:hover{
+    background-color: #ff0076;
+    color: #fff;
+}
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url('33.jpg') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.from-box{
+    position: relative;
+    width: 400px;
+    height: 450px;
+    background: transparent;
+    border: 2px solid rgb(240,185,123);
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h2{
+    font-size: 2em;
+    color: #fff;
+    text-align: center;
+}
+.input-box{
+    position: relative;
+    margin: 30px 0;
+    width: 310px;
+    border-bottom: 2px solid #ff9100;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 1em;
+    pointer-events: none;
+    transition: .5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+    top: -5px;
+}
+.input-box input{
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    padding: 0 35px 0 5px;
+    color: #fff;
+}
+.icone-close{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    color: #ff9100;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #ff9100;
+    font-size: 1.4em;
+    top: 20px;
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size:  .8em;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+}
+.forget label input{
+    margin-right: 3px;
+}
+.forget label a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 80px;
+}
+.forget label a:hover{
+    text-decoration: underline;
+}
+.btnlogin{
+    width: 320px;
+    height: 40px;
+    border-radius: 40px;
+    background: #ff9100;
+    color: #fff;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 600;
+}
+.register{
+    font-size: .9em;
+    color: #fff;
+    text-align: center;
+    margin: 25px 0 10px;
+}
+.register p{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 600;
+}
+.register p a:hover{
+    text-decoration: underline;
+
+}

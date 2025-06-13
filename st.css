@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css?family=Tangerine|Inconsolata|Droid+Sans');
+
+*{margin: 0%;
+padding: 0%;
+font-family: 'poopins',sans-serif;
+}
+header{
+  position: fixed;
+   top: 0; 
+   left: 0;
+   width: 95%;
+   padding: 20px 40px;
+   background: transparent;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   z-index: 99;
+}
+.logo{
+    font-size: 200;
+    color: #fff;
+    user-select: none;
+}
+.navigition a {
+    position: relative;
+    font-size: 1.1em;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+.navigition a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background: #ff0076;
+    border-radius: 5px;
+   transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+.navigition a:hover::after{
+    transform: scaleX(1);
+    transform-origin:left ;
+}
+.navigition .Btnlogin{
+    width:130px ;
+    height: 50px;
+    background: transparent;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.2em;
+    color: #fff;
+    font-weight: 500;
+    margin-left: 40px;
+    transition: .5s;
+
+}
+.navigition .Btnlogin:hover{
+background: #ff0076;
+color: #fff;
+}
+section{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     min-height: 100vh;
+     width: 100%;
+    
+    background: url('33.jpg')no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.from-box{
+position: relative;
+ width: 400px;
+  height: 450px;
+  background: transparent;
+  border: 2px solid rgb(240, 185, 123);
+  border-radius: 20px;
+  backdrop-filter:blur(15px) ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+}
+
+
+
+h2{
+    font-size: 2em;
+    color: #ffffff;
+    text-align: center;
+
+}
+.input-box{
+position: relative;
+margin: 30px 0;
+width: 310px;
+border-bottom: 2px solid #ff9100;
+}
+.input-box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform:translateY(-50%) ;
+    color: #ffffff;
+    font-size: lem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+input:focus ~ label,
+input:valid ~ label{
+   top: -5px; 
+}
+
+.input-box input{
+width: 100%;
+height: 50px;
+background: transparent;
+border: none;
+outline: none;
+font-size: lem;
+padding: 0 35px 0 5px;
+color: #ffffff;
+}
+.ioco-clos{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background: transparent;
+    color: #ff9100;
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+  
+}
+.input-box ion-icon{
+    position: absolute;
+    right: 8px;
+    color: #ff9100;
+    font-size: 1.4em;
+    top: 20px;
+
+}
+.forget{
+    margin: -15px 0 15px;
+    font-size: .8em;
+    color: #fff;
+display: flex;
+justify-content: center;
+
+}
+.forget label input{
+    margin-right: 3px;
+
+
+}
+.forget label a{
+color: #fff;
+text-decoration:none ;
+margin-left: 80px;
+
+}
+.forget label a:hover{
+    text-decoration:underline ;
+}
+.Btn-log{
+width: 320px;
+height: 40px;
+border-radius: 40px;
+background: #ff9100;
+color: #fff;
+border: none;
+outline: none; 
+cursor: pointer;
+font-size: 1em;
+font-weight: 600;
+}
+.register{
+ font-size: .9em; 
+ color: #ffffff;  
+ text-align: center;
+ margin: 25px 0 10px;
+
+}
+.register p{
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+  
+}
+.register p a:hover{
+    text-decoration: underline;
+}
